@@ -26,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "proxies"
 CHECKER = os.environ.get("PROXY_CHECKER", "proxy-checker")
+WORKERS = os.environ.get("CHECK_WORKERS", "500")  # proxies checked at once; lower spreads the connections over the run
 TARGET = "https://www.cloudflare.com/cdn-cgi/trace"
 JUDGE = "http://httpbin.org/get"  # plain HTTP on purpose: inside an HTTPS tunnel a proxy cannot add headers
 CACHE = ROOT / "data" / "anonymity.json"
@@ -99,7 +100,7 @@ def check(candidates: list[str]) -> list[dict]:
         f.write("\n".join(candidates))
         path = f.name
     try:
-        run = subprocess.run([CHECKER, "-f", path, "-c", "500", "-t", "10s", "-target", TARGET, "-o", "json"],
+        run = subprocess.run([CHECKER, "-f", path, "-c", WORKERS, "-t", "10s", "-target", TARGET, "-o", "json"],
                              capture_output=True, text=True, timeout=1800)
     finally:
         os.unlink(path)
