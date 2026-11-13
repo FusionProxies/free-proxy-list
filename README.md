@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://fusionproxy.net/?utm_source=github&utm_medium=free-proxy-list">
+  <a href="https://fusionproxy.net/?utm_source=github&utm_medium=referral&utm_campaign=free-proxy-list">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FusionProxies/.github/main/assets/logo-on-dark.png">
       <img src="https://raw.githubusercontent.com/FusionProxies/.github/main/assets/logo-on-light.png" alt="Fusion Proxy" height="52">
@@ -69,7 +69,7 @@ for proxy in random.sample(proxies, 5):
         print(proxy, "failed, trying the next one")
 ```
 
-To check proxies yourself, use [proxy-checker](https://github.com/FusionProxies/proxy-checker) (command line) or the [online proxy checker](https://fusionproxy.net/tools/proxy-checker?utm_source=github&utm_medium=free-proxy-list).
+To check proxies yourself, use [proxy-checker](https://github.com/FusionProxies/proxy-checker) (command line) or the [online proxy checker](https://fusionproxy.net/tools/proxy-checker?utm_source=github&utm_medium=referral&utm_campaign=free-proxy-list).
 
 ## How the list is built
 
@@ -99,7 +99,7 @@ Public proxies are run by unknown people. Treat everything you send through them
 - prefer HTTPS sites, and use `socks5h://` so DNS is resolved on the proxy side;
 - expect slow answers, frequent timeouts and IPs that many sites already block.
 
-For logins, scraping at scale or anything that has to keep working, use proxies with a known source. [Fusion Proxy residential proxies](https://fusionproxy.net/proxies/residential?utm_source=github&utm_medium=free-proxy-list) give you real household IPs in the country, state or city you choose, with rotating or sticky sessions, from $2.95/GB and down to $0.65/GB at volume. [Try it free](https://fusionproxy.net/free-trial?utm_source=github&utm_medium=free-proxy-list).
+For logins, scraping at scale or anything that has to keep working, use proxies with a known source. [Fusion Proxy residential proxies](https://fusionproxy.net/proxies/residential?utm_source=github&utm_medium=referral&utm_campaign=free-proxy-list) give you real household IPs in the country, state or city you choose, with rotating or sticky sessions, from $2.95/GB and down to $0.65/GB at volume. [Try it free](https://fusionproxy.net/free-trial?utm_source=github&utm_medium=referral&utm_campaign=free-proxy-list).
 
 ## Sources
 
