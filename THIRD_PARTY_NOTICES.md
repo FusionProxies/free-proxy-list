@@ -1,6 +1,6 @@
 # Third-party notices
 
-Candidate proxies are collected from the following public lists. Every candidate is re-checked before it is published in this repository.
+The proxies are collected from the following public lists.
 
 ## iplocate/free-proxy-list
 
