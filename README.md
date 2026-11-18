@@ -20,14 +20,14 @@ If this list saves you time, a ⭐ helps other developers find it.
 ## Current list
 
 <!-- stats:start -->
-Last update: **2026-11-13 16:35 UTC**. 4,062 proxies from 5 public lists, merged without duplicates (not re-checked here).
+Last update: **2026-11-18 11:05 UTC**. 5,685 proxies from 5 public lists, merged without duplicates (not re-checked here).
 
 | Protocol | Proxies | File |
 |---|---|---|
-| HTTP | 2,298 | [`proxies/http.txt`](proxies/http.txt) |
-| SOCKS4 | 662 | [`proxies/socks4.txt`](proxies/socks4.txt) |
-| SOCKS5 | 1,102 | [`proxies/socks5.txt`](proxies/socks5.txt) |
-| **All** | **4,062** | [`proxies/all.txt`](proxies/all.txt) |
+| HTTP | 2,681 | [`proxies/http.txt`](proxies/http.txt) |
+| SOCKS4 | 691 | [`proxies/socks4.txt`](proxies/socks4.txt) |
+| SOCKS5 | 2,313 | [`proxies/socks5.txt`](proxies/socks5.txt) |
+| **All** | **5,685** | [`proxies/all.txt`](proxies/all.txt) |
 <!-- stats:end -->
 
 ## Download the free proxy list (TXT, JSON, CSV)
