@@ -141,3 +141,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+## DB-IP IP to Country Lite
+
+The `country` field and the files in `proxies/countries/` are derived from the IP to Country Lite
+database by DB-IP (https://db-ip.com), downloaded monthly from https://db-ip.com/db/download/ip-to-country-lite.
+
+IP Geolocation by DB-IP (https://db-ip.com)
+
+Licensed under the Creative Commons Attribution 4.0 International License
+(https://creativecommons.org/licenses/by/4.0/). The database itself is not stored in this repository.

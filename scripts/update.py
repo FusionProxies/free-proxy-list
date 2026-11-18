@@ -66,7 +66,15 @@ LINE = re.compile(r"^(?:(https?|socks4|socks5)://)?(\d{1,3}(?:\.\d{1,3}){3}):(\d
 
 def download() -> tuple[list[str], list[str]]:
     """Return the merged candidates without duplicates, and the names of the lists that answered."""
-    seen, out, used = set(), [], []
+    out, _, used = download_with_sources()
+    return out, used
+
+
+def download_with_sources() -> tuple[list[str], dict[str, list[str]], list[str]]:
+    """Return the merged candidates without duplicates (in the order they were first listed),
+    the source lists that listed each candidate, and the names of the lists that answered."""
+    out, used = [], []
+    provenance: dict[str, list[str]] = {}
     for name, url, default in SOURCES:
         req = urllib.request.Request(url, headers={"User-Agent": "FusionProxies/free-proxy-list"})
         try:
@@ -84,15 +92,17 @@ def download() -> tuple[list[str], list[str]]:
                 continue
             if scheme == "https":
                 scheme = "http"
-            key = (scheme, m.group(2), int(m.group(3)))
-            if key not in seen:
-                seen.add(key)
-                out.append(f"{key[0]}://{key[1]}:{key[2]}")
+            proxy = f"{scheme}://{m.group(2)}:{int(m.group(3))}"
+            if proxy not in provenance:
+                provenance[proxy] = []
+                out.append(proxy)
                 n += 1
+            if name not in provenance[proxy]:
+                provenance[proxy].append(name)
         if name not in used:
             used.append(name)
         print(f"source {url}: {n} new candidates")
-    return out, used
+    return out, provenance, used
 
 
 def check(candidates: list[str]) -> list[dict]:
