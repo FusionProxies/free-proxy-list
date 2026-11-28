@@ -22,14 +22,39 @@ If this list saves you time, a ⭐ helps other developers find it.
 ## Current list
 
 <!-- stats:start -->
-Last update: **2026-11-18 11:05 UTC**. 5,685 proxies from 5 public lists, merged without duplicates (not re-checked here).
+Last update: **2026-11-28 11:35 UTC**. 5,106 proxies from 5 public lists, merged without duplicates. **Collected, not tested:** these are the proxies the sources list, not proxies we found working. 563 of them are listed by two or more sources.
 
 | Protocol | Proxies | File |
 |---|---|---|
-| HTTP | 2,681 | [`proxies/http.txt`](proxies/http.txt) |
-| SOCKS4 | 691 | [`proxies/socks4.txt`](proxies/socks4.txt) |
-| SOCKS5 | 2,313 | [`proxies/socks5.txt`](proxies/socks5.txt) |
-| **All** | **5,685** | [`proxies/all.txt`](proxies/all.txt) |
+| HTTP | 3,120 | [`proxies/http.txt`](proxies/http.txt) |
+| SOCKS4 | 829 | [`proxies/socks4.txt`](proxies/socks4.txt) |
+| SOCKS5 | 1,157 | [`proxies/socks5.txt`](proxies/socks5.txt) |
+| **All** | **5,106** | [`proxies/all.txt`](proxies/all.txt) |
+
+Top countries of the listed IPs (GeoIP lookup, all 121 in [`proxies/countries/`](proxies/countries)):
+
+| Country | Proxies | File |
+|---|---|---|
+| ID | 778 | [`proxies/countries/ID.txt`](proxies/countries/ID.txt) |
+| US | 639 | [`proxies/countries/US.txt`](proxies/countries/US.txt) |
+| CN | 318 | [`proxies/countries/CN.txt`](proxies/countries/CN.txt) |
+| NL | 288 | [`proxies/countries/NL.txt`](proxies/countries/NL.txt) |
+| CA | 266 | [`proxies/countries/CA.txt`](proxies/countries/CA.txt) |
+| RU | 178 | [`proxies/countries/RU.txt`](proxies/countries/RU.txt) |
+| DE | 156 | [`proxies/countries/DE.txt`](proxies/countries/DE.txt) |
+| TR | 137 | [`proxies/countries/TR.txt`](proxies/countries/TR.txt) |
+| VN | 135 | [`proxies/countries/VN.txt`](proxies/countries/VN.txt) |
+| IN | 133 | [`proxies/countries/IN.txt`](proxies/countries/IN.txt) |
+| PK | 130 | [`proxies/countries/PK.txt`](proxies/countries/PK.txt) |
+| TH | 117 | [`proxies/countries/TH.txt`](proxies/countries/TH.txt) |
+
+| Source | Listed | Only in this source |
+|---|---|---|
+| [iplocate/free-proxy-list](https://github.com/iplocate/free-proxy-list) | 1,426 | 1,056 |
+| [monosans/proxy-list](https://github.com/monosans/proxy-list) | 1,754 | 1,457 |
+| [ProxyScrape/free-proxy-list](https://github.com/ProxyScrape/free-proxy-list) | 1,565 | 1,116 |
+| [vakhov/fresh-proxy-list](https://github.com/vakhov/fresh-proxy-list) | 716 | 671 |
+| [Zaeem20/FREE_PROXIES_LIST](https://github.com/Zaeem20/FREE_PROXIES_LIST) | 306 | 243 |
 <!-- stats:end -->
 
 ## Download the free proxy list (TXT, JSON, CSV)
